@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: lwweb
-  name: lwweb
+    app: dep1
+  name: dep1
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
-      app: lwweb
+      app: dep1
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: lwweb
+        app: dep1
     spec:
       containers:
       - image: vimal13/apache-webserver-php
